@@ -22,8 +22,8 @@ var textarea = document.getElementById('a')
 if (navigator.userAgent.indexOf('Mobile') !== -1) { document.getElementById('save').style.display = "none"; textarea.style.height = "100px";
 }//resize for mobile
 function generate() {
-var triesPerSecond = 1 //self explanatory
-getGiftCode = function () {
+    var triesPerSecond = 1 //self explanatory
+    getGiftCode = function () {
     let code = '';
     let dict = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
     for(var i = 0; i < 16; i++){
