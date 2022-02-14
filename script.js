@@ -22,7 +22,7 @@ var textarea = document.getElementById('a')
 if (navigator.userAgent.indexOf('Mobile') !== -1) { document.getElementById('save').style.display = "none"; textarea.style.height = "100px";
 }//resize for mobile
 function generate() {
-var triesPerSecond = document.getElementById('speed').value //self explanatory
+var triesPerSecond = 1 //self explanatory
 getGiftCode = function () {
     let code = '';
     let dict = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
@@ -37,4 +37,4 @@ function stop() {
   clearInterval(gInterval);
   clearInterval(interval)
 }
-var gInterval = setInterval(() => {getGiftCode();}, (1/triesPerSecond) * 1000);
+var gInterval = setInterval(() => {getGiftCode();}, (1/triesPerSecond) * 5000);
