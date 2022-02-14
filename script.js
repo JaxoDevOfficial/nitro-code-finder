@@ -24,13 +24,13 @@ if (navigator.userAgent.indexOf('Mobile') !== -1) { document.getElementById('sav
 function generate() {
     var triesPerSecond = 1 //self explanatory
     getGiftCode = function () {
-    let code = '';
-    let dict = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-    for(var i = 0; i < 16; i++){
-        code = code + dict.charAt(Math.floor(Math.random() * dict.length));
+        let code = '';
+        let dict = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+        for(var i = 0; i < 16; i++){
+            code = code + dict.charAt(Math.floor(Math.random() * dict.length));
+        }
+        console.log('[GEN] http://discord.gift/' + code + "\n");
     }
-    console.log('[GEN] http://discord.gift/' + code + "\n");
-
 }
 getGiftCode();
 function stop() {
