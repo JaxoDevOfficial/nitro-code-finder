@@ -8,6 +8,7 @@ getGiftCode = function () {
     }
     console.log('[GEN] http://discord.gift/' + code);
 }
+}
 getGiftCode();
 document.getElementById('stop').addEventListener("click", stop);
 function stop() {
